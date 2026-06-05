@@ -2,7 +2,7 @@
 
 ## Identificação
 
-**ID:** BUG-001
+ID:** BUG-001
 
 **Título:** Sistema não exibe mensagem de erro para senha incorreta.
 
