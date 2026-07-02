@@ -1,203 +1,248 @@
 # Casos de Teste - Login
 
-** CT-001 - Login com usuário e senha válidos
-
-*** Objetivo
-
-Validar acesso ao sistema com credenciais corretas.
-
-*** Pré-condição
-
-Usuário cadastrado.
-
-*** Passos
-
-1. Abrir tela de login.
-2. Informar usuário válido.
-3. Informar senha válida.
-4. Clicar em Entrar.
-
-*** Resultado Esperado
-
-Sistema permite acesso e direciona para a página inicial.
-
-*** Prioridade
-
-Alta
+Este documento contém os casos de teste funcionais para validação da funcionalidade de autenticação do sistema.
 
 ---
 
-** CT-002 - Login com senha incorreta
+## CT-001 - Login com usuário e senha válidos
 
-*** Objetivo
+- **Objetivo:** Validar que um usuário cadastrado consegue acessar o sistema utilizando credenciais válidas.
 
-Validar mensagem de erro para senha inválida.
+- **Tipo de Teste:** Funcional
 
-*** Pré-condição
+- **Prioridade:** Alta
 
-Usuário cadastrado.
+- **Pré-condições:**
+  - Usuário previamente cadastrado.
+  - Sistema disponível.
 
-*** Passos
+- **Massa de Teste:**
+  - Usuário: `usuario.teste`
+  - Senha: `Senha@123`
 
-1. Informar usuário válido.
-2. Informar senha incorreta.
-3. Clicar em Entrar.
+- **Passos:**
+  1. Acessar a tela de Login.
+  2. Informar usuário válido.
+  3. Informar senha válida.
+  4. Clicar em **Entrar**.
 
-*** Resultado Esperado
+- **Resultado Esperado:**
+  O sistema autentica o usuário e redireciona para a página inicial.
 
-Sistema exibe mensagem de erro.
-
-*** Prioridade
-
-Alta
-** CT-003 - Login com usuário inexistente
-
-*** Objetivo
-
-Validar comportamento do sistema para usuário não cadastrado.
-
-*** Pré-condição
-
-Usuário não cadastrado.
-
-*** Passos
-
-1. Informar usuário inexistente.
-2. Informar uma senha qualquer.
-3. Clicar em Entrar.
-
-*** Resultado Esperado
-
-Sistema exibe mensagem de credenciais inválidas.
-
-*** Prioridade
-
-Alta
+- **Status:** Não Executado
 
 ---
 
-** CT-004 - Login com campos vazios
+## CT-002 - Login com senha incorreta
 
-*** Objetivo
+- **Objetivo:** Validar que o sistema impede login utilizando senha incorreta.
 
-Validar obrigatoriedade dos campos.
+- **Tipo de Teste:** Negativo
 
-*** Pré-condição
+- **Prioridade:** Alta
 
-Tela de login aberta.
+- **Pré-condições:**
+  - Usuário cadastrado.
 
-*** Passos
+- **Massa de Teste:**
+  - Usuário: `usuario.teste`
+  - Senha: `senhaErrada123`
 
-1. Deixar usuário vazio.
-2. Deixar senha vazia.
-3. Clicar em Entrar.
+- **Passos:**
+  1. Informar usuário válido.
+  2. Informar senha incorreta.
+  3. Clicar em Entrar.
 
-*** Resultado Esperado
+- **Resultado Esperado:**
+  O sistema apresenta mensagem de credenciais inválidas.
 
-Sistema solicita preenchimento dos campos obrigatórios.
-
-*** Prioridade
-
-Alta
-
----
-
-** CT-005 - Login com SQL Injection
-
-*** Objetivo
-
-Validar proteção contra entradas maliciosas.
-
-*** Passos
-
-1. Informar:
-   ' OR '1'='1
-2. Clicar em Entrar.
-
-*** Resultado Esperado
-
-Sistema rejeita a entrada e mantém a segurança da aplicação.
-
-*** Prioridade
-
-Alta
+- **Status:** Não Executado
 
 ---
 
-** CT-006 - Login com senha em branco
+## CT-003 - Login com usuário inexistente
 
-*** Objetivo
+- **Objetivo:** Validar comportamento para usuário não cadastrado.
 
-Validar comportamento quando apenas a senha não é informada.
+- **Tipo de Teste:** Negativo
 
-*** Resultado Esperado
+- **Prioridade:** Alta
 
-Sistema solicita preenchimento da senha.
+- **Pré-condições:**
+  - Usuário inexistente.
 
-*** Prioridade
+- **Massa de Teste:**
+  - Usuário: `usuario.inexistente`
+  - Senha: `Senha@123`
 
-Média
+- **Passos:**
+  1. Informar usuário inexistente.
+  2. Informar uma senha qualquer.
+  3. Clicar em Entrar.
 
----
+- **Resultado Esperado:**
+  O sistema informa que as credenciais são inválidas.
 
-** CT-007 - Login com usuário em branco
-
-*** Objetivo
-
-Validar comportamento quando apenas o usuário não é informado.
-
-*** Resultado Esperado
-
-Sistema solicita preenchimento do usuário.
-
-*** Prioridade
-
-Média
+- **Status:** Não Executado
 
 ---
 
-** CT-008 - Bloqueio após múltiplas tentativas inválidas
+## CT-004 - Login com campos vazios
 
-*** Objetivo
+- **Objetivo:** Validar obrigatoriedade do preenchimento dos campos.
 
-Validar mecanismo de segurança.
+- **Tipo de Teste:** Validação
 
-*** Resultado Esperado
+- **Prioridade:** Alta
 
-Conta bloqueada após quantidade definida de tentativas.
+- **Pré-condições:**
+  - Tela de Login aberta.
 
-*** Prioridade
+- **Passos:**
+  1. Deixar o campo usuário vazio.
+  2. Deixar o campo senha vazio.
+  3. Clicar em Entrar.
 
-Alta
+- **Resultado Esperado:**
+  O sistema solicita o preenchimento dos campos obrigatórios.
 
----
-
-** CT-009 - Recuperação de senha
-
-*** Objetivo
-
-Validar fluxo de recuperação de senha.
-
-*** Resultado Esperado
-
-Sistema envia instruções para redefinição.
-
-*** Prioridade
-
-Alta
+- **Status:** Não Executado
 
 ---
 
-** CT-010 - Logout do sistema
+## CT-005 - Login com SQL Injection
 
-*** Objetivo
+- **Objetivo:** Validar proteção contra SQL Injection.
 
-Validar encerramento da sessão do usuário.
+- **Tipo de Teste:** Segurança
 
-*** Resultado Esperado
+- **Prioridade:** Alta
 
-Usuário retorna para tela de login.
+- **Massa de Teste:**
 
-*** Prioridade
+```text
+' OR '1'='1
+```
 
-Alta
+- **Passos:**
+  1. Informar a expressão acima no campo usuário.
+  2. Informar qualquer senha.
+  3. Clicar em Entrar.
+
+- **Resultado Esperado:**
+  O sistema rejeita a tentativa de autenticação sem executar comandos SQL indevidos.
+
+- **Status:** Não Executado
+
+---
+
+## CT-006 - Login com senha em branco
+
+- **Objetivo:** Validar comportamento quando apenas a senha não é informada.
+
+- **Tipo de Teste:** Validação
+
+- **Prioridade:** Média
+
+- **Pré-condições:**
+  - Usuário cadastrado.
+
+- **Passos:**
+  1. Informar usuário válido.
+  2. Deixar a senha em branco.
+  3. Clicar em Entrar.
+
+- **Resultado Esperado:**
+  O sistema solicita o preenchimento da senha.
+
+- **Status:** Não Executado
+
+---
+
+## CT-007 - Login com usuário em branco
+
+- **Objetivo:** Validar comportamento quando apenas o usuário não é informado.
+
+- **Tipo de Teste:** Validação
+
+- **Prioridade:** Média
+
+- **Pré-condições:**
+  - Tela de Login aberta.
+
+- **Passos:**
+  1. Deixar o campo usuário vazio.
+  2. Informar uma senha válida.
+  3. Clicar em Entrar.
+
+- **Resultado Esperado:**
+  O sistema solicita o preenchimento do usuário.
+
+- **Status:** Não Executado
+
+---
+
+## CT-008 - Bloqueio após múltiplas tentativas inválidas
+
+- **Objetivo:** Validar o bloqueio da conta após sucessivas tentativas inválidas.
+
+- **Tipo de Teste:** Segurança
+
+- **Prioridade:** Alta
+
+- **Pré-condições:**
+  - Usuário cadastrado.
+
+- **Passos:**
+  1. Informar senha incorreta cinco vezes consecutivas.
+  2. Tentar novo login.
+
+- **Resultado Esperado:**
+  A conta é bloqueada conforme a regra de negócio.
+
+- **Status:** Não Executado
+
+---
+
+## CT-009 - Recuperação de senha
+
+- **Objetivo:** Validar o fluxo de recuperação de senha.
+
+- **Tipo de Teste:** Funcional
+
+- **Prioridade:** Alta
+
+- **Pré-condições:**
+  - Usuário cadastrado.
+
+- **Passos:**
+  1. Clicar em **Esqueci minha senha**.
+  2. Informar o e-mail cadastrado.
+  3. Confirmar a solicitação.
+
+- **Resultado Esperado:**
+  O sistema envia as instruções para redefinição da senha.
+
+- **Status:** Não Executado
+
+---
+
+## CT-010 - Logout
+
+- **Objetivo:** Validar o encerramento seguro da sessão.
+
+- **Tipo de Teste:** Funcional
+
+- **Prioridade:** Alta
+
+- **Pré-condições:**
+  - Usuário autenticado no sistema.
+
+- **Passos:**
+  1. Estar autenticado.
+  2. Clicar em **Logout**.
+
+- **Resultado Esperado:**
+  O sistema encerra a sessão e retorna para a tela de Login.
+
+- **Status:** Não Executado
