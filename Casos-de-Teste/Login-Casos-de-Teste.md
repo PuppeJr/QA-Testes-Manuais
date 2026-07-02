@@ -1,203 +1,203 @@
 # Casos de Teste - Login
 
-## CT-001 - Login com usuário e senha válidos
+** CT-001 - Login com usuário e senha válidos
 
-### Objetivo
+*** Objetivo
 
 Validar acesso ao sistema com credenciais corretas.
 
-### Pré-condição
+*** Pré-condição
 
 Usuário cadastrado.
 
-### Passos
+*** Passos
 
 1. Abrir tela de login.
 2. Informar usuário válido.
 3. Informar senha válida.
 4. Clicar em Entrar.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema permite acesso e direciona para a página inicial.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-002 - Login com senha incorreta
+** CT-002 - Login com senha incorreta
 
-### Objetivo
+*** Objetivo
 
 Validar mensagem de erro para senha inválida.
 
-### Pré-condição
+*** Pré-condição
 
 Usuário cadastrado.
 
-### Passos
+*** Passos
 
 1. Informar usuário válido.
 2. Informar senha incorreta.
 3. Clicar em Entrar.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema exibe mensagem de erro.
 
-### Prioridade
+*** Prioridade
 
 Alta
-## CT-003 - Login com usuário inexistente
+** CT-003 - Login com usuário inexistente
 
-### Objetivo
+*** Objetivo
 
 Validar comportamento do sistema para usuário não cadastrado.
 
-### Pré-condição
+*** Pré-condição
 
 Usuário não cadastrado.
 
-### Passos
+*** Passos
 
 1. Informar usuário inexistente.
 2. Informar uma senha qualquer.
 3. Clicar em Entrar.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema exibe mensagem de credenciais inválidas.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-004 - Login com campos vazios
+** CT-004 - Login com campos vazios
 
-### Objetivo
+*** Objetivo
 
 Validar obrigatoriedade dos campos.
 
-### Pré-condição
+*** Pré-condição
 
 Tela de login aberta.
 
-### Passos
+*** Passos
 
 1. Deixar usuário vazio.
 2. Deixar senha vazia.
 3. Clicar em Entrar.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema solicita preenchimento dos campos obrigatórios.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-005 - Login com SQL Injection
+** CT-005 - Login com SQL Injection
 
-### Objetivo
+*** Objetivo
 
 Validar proteção contra entradas maliciosas.
 
-### Passos
+*** Passos
 
 1. Informar:
    ' OR '1'='1
 2. Clicar em Entrar.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema rejeita a entrada e mantém a segurança da aplicação.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-006 - Login com senha em branco
+** CT-006 - Login com senha em branco
 
-### Objetivo
+*** Objetivo
 
 Validar comportamento quando apenas a senha não é informada.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema solicita preenchimento da senha.
 
-### Prioridade
+*** Prioridade
 
 Média
 
 ---
 
-## CT-007 - Login com usuário em branco
+** CT-007 - Login com usuário em branco
 
-### Objetivo
+*** Objetivo
 
 Validar comportamento quando apenas o usuário não é informado.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema solicita preenchimento do usuário.
 
-### Prioridade
+*** Prioridade
 
 Média
 
 ---
 
-## CT-008 - Bloqueio após múltiplas tentativas inválidas
+** CT-008 - Bloqueio após múltiplas tentativas inválidas
 
-### Objetivo
+*** Objetivo
 
 Validar mecanismo de segurança.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Conta bloqueada após quantidade definida de tentativas.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-009 - Recuperação de senha
+** CT-009 - Recuperação de senha
 
-### Objetivo
+*** Objetivo
 
 Validar fluxo de recuperação de senha.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Sistema envia instruções para redefinição.
 
-### Prioridade
+*** Prioridade
 
 Alta
 
 ---
 
-## CT-010 - Logout do sistema
+** CT-010 - Logout do sistema
 
-### Objetivo
+*** Objetivo
 
 Validar encerramento da sessão do usuário.
 
-### Resultado Esperado
+*** Resultado Esperado
 
 Usuário retorna para tela de login.
 
-### Prioridade
+*** Prioridade
 
 Alta
