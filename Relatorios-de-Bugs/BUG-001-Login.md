@@ -1,18 +1,18 @@
 # BUG-001 - Mensagem de erro não exibida após senha inválida
 
-## Identificação
+Identificação
 
-ID:** BUG-001
+ID:BUG-001
 
-**Título:** Sistema não exibe mensagem de erro para senha incorreta.
+Título: Sistema não exibe mensagem de erro para senha incorreta.
 
-**Módulo:** Login
+Módulo: Login
 
-**Severidade:** Média
+Severidade: Média
 
-**Prioridade:** Alta
+Prioridade: Alta
 
-**Status:** Aberto
+Status: Aberto
 
 ---
 
