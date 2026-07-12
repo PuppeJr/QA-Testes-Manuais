@@ -8,7 +8,7 @@ Cada sprint documenta o planejamento, as atividades realizadas, os resultados ob
 
 ---
 
-## Sprints
+## Planejamento das Sprints
 
 | Sprint | Objetivo | Status |
 | ------- | -------- | ------ |
