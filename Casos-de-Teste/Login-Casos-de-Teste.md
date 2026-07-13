@@ -1,4 +1,40 @@
-# Casos de Teste - Login
+# Informações Gerais
+
+| Campo | Valor |
+|-------|-------|
+
+| Identificador | CT-002 |
+| Funcionalidade | Login com Google |
+| Tipo de Teste | Funcional |
+| Prioridade | Alta |
+| Criticidade | Crítica |
+| Ambiente | UAT |
+| Responsável | Paulo Fernando Puppe Junior |
+| Data da Criação | 2026-07-02 |
+| Última Atualização | 2026-07-12 |
+
+---
+
+## Objetivo
+
+Validar o processo de autenticação utilizando uma conta Google válida, garantindo que o usuário seja autenticado e redirecionado corretamente para o Dashboard.
+
+---
+
+## Pré-condições
+
+- Usuário possui conta Google válida.
+- Navegador suportado.
+- Sistema disponível.
+
+---
+
+## Pós-condições
+
+- Usuário autenticado.
+- Sessão iniciada.
+
+## Casos de Teste - Login
 
 Este documento contém os casos de teste funcionais para validação da funcionalidade de autenticação do sistema.
 
