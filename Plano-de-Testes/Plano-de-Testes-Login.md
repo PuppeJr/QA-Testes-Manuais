@@ -2,147 +2,130 @@
 
 ## Objetivo
 
-Este documento define o planejamento da execução dos testes do projeto **QA-Testes-Manuais**, estabelecendo escopo, estratégia, ambiente, responsabilidades e critérios para validação da qualidade do sistema.
+Definir a estratégia, o escopo, os critérios e os recursos necessários para validar a funcionalidade de autenticação do sistema.
 
 ---
 
 ## Informações Gerais
 
-| Campo       | Valor                             |
-|-------------|-----------------------------------|
-| Projeto     | SIM Racing Manager (Ambiente UAT) |
-| Tipo        | Testes Manuais                    |
-| Responsável | Paulo Fernando Puppe Junior       |
-| Ambiente    | UAT                               |
-| Versão      | 1.0                               |
-| Data        | Julho/2026                        |
+| Campo              | Valor                       |
+|--------------------|-----------------------------|
+| Documento          | PT-001                      |
+| Projeto            | QA-Testes-Manuais           |
+| Funcionalidade     | Login                       |
+| Versão             | 1.1                         |
+| Responsável        | Paulo Fernando Puppe Junior |
+| Ambiente           | UAT                         |
+| Última Atualização | 13/07/2026                  |
 
 ---
 
 ## Escopo
 
-Serão testadas as funcionalidades críticas do sistema.
+Este plano contempla os testes relacionados ao processo de autenticação do sistema.
 
-## Funcionalidades contempladas
+Serão validados:
 
-- Login Google
-- Dashboard
-- Drivers
-- Teams
-- Seasons
-- Calendar
-- Results
-- Notifications
-- Perfil do Usuário
+- Login com Google
+- Login por usuário e senha
+- Logout
+- Recuperação de senha
+- Validação dos campos obrigatórios
+- Segurança da autenticação
 
 ---
 
-## Fora do Escopo
+## Objetivos dos Testes
 
-Nesta fase não serão realizados:
-
-- Testes Automatizados
-- Testes de Performance
-- Testes de Carga
-- Testes de Stress
-- Testes Mobile
-- Testes de Integração com serviços externos
+- Garantir autenticação correta.
+- Garantir segurança do login.
+- Validar mensagens de erro.
+- Garantir funcionamento do logout.
+- Validar recuperação de senha.
 
 ---
 
-## Tipos de Teste
+## Tipos de Testes
 
-- Funcional
-- Exploratório
-- Negativo
-- Regressão
-- Segurança
-- Usabilidade
-- Compatibilidade
-
----
-
-## Ambiente
-
-| Item                | Descrição            |
-|---------------------|----------------------|
-| Sistema Operacional | Windows 11           |
-| Navegador           | Google Chrome        |
-| Ambiente            | UAT                  |
-| Conexão             | Internet             |
-| Ferramentas         | VS Code, Git, GitHub |
+| Tipo          | Aplicação |
+|---------------|-----------|
+| Funcional     | ✔         |
+| Regressão     | ✔         |
+| Exploratórios | ✔         |
+| Segurança     | ✔         |
+| Usabilidade   | ✔         |
 
 ---
 
 ## Critérios de Entrada
 
-Consultar:
-
-Documentacao/Criterios-de-Entrada-e-Saida.md
+- Ambiente disponível.
+- Sistema implantado.
+- Massa de testes preparada.
+- Conta Google válida.
+- Usuário cadastrado.
 
 ---
 
 ## Critérios de Saída
 
-Consultar:
-
-Documentacao/Criterios-de-Entrada-e-Saida.md
-
----
-
-## Riscos
-
-Consultar:
-
-Matrizes/Matriz-de-Riscos.md
+- Todos os casos críticos executados.
+- Evidências registradas.
+- Bugs documentados.
+- Casos atualizados.
+- Aprovação para homologação.
 
 ---
 
-## Rastreabilidade
+## Massa de Testes
 
-Consultar:
-
-Matrizes/Matriz-de-Rastreabilidade.md
-
----
-
-## Entregáveis
-
-- Plano de Testes
-- Casos de Teste
-- Massa de Testes
-- Execuções
-- Evidências
-- Relatórios de Bugs
-- Matrizes
-- Documentação Técnica
+| Item             | Situação |
+|------------------|----------|
+| Usuário válido   | ✔        |
+| Usuário inválido | ✔        |
+| Senha inválida   | ✔        |
+| Conta Google     | ✔        |
 
 ---
 
-## Papéis e Responsabilidades
+## Artefatos Relacionados
 
-| Papel         | Responsabilidade                      |
-|---------------|---------------------------------------|
-| QA            | Planejamento, execução e documentação |
-| Desenvolvedor | Correção dos defeitos encontrados     |
-| Projeto       | Disponibilizar ambiente UAT           |
+### Documento de Origem
+
+- LF-001 — Levantamento Funcional
+
+### Casos de Teste
+
+- CT-001 ao CT-010
+
+### Execuções
+
+- ET-002
+
+### Evidências
+
+- EV-002
+
+### Matrizes
+
+- Matriz de Rastreabilidade
+- Matriz de Riscos
+
+### Sprint
+
+- Sprint 03
 
 ---
 
-## Cronograma
+## Histórico de Alterações
 
-| Sprint    | Objetivo                    |
-|-----------|-----------------------------|
-| Sprint 01 | Organização da documentação |
-| Sprint 02 | Engenharia de Testes        |
-| Sprint 03 | API                         |
-| Sprint 04 | Banco de Dados              |
-| Sprint 05 | Automação                   |
-| Sprint 06 | Métricas                    |
-| Sprint 07 | Revisão Final               |
+| Data       | Versão | Responsável                 | Alteração            |
+|------------|--------|-----------------------------|----------------------|
+| 05/06/2026 | 1.0    | Paulo Fernando Puppe Junior | Criação              |
+| 13/07/2026 | 1.1    | Paulo Fernando Puppe Junior | Refatoração completa |
 
 ---
 
-## Aprovação
+## Revisão
 
-Este plano será atualizado continuamente conforme a evolução do projeto.
+Este plano deverá ser revisado sempre que houver alteração significativa na funcionalidade de Login.
