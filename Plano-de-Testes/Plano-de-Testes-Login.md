@@ -1,16 +1,16 @@
 ﻿# Plano de Testes — Login
 
-| Documento          | PT-001                      |
-| ------------------ | --------------------------- |
-| Projeto            | SIM Racing Manager          |
-| Módulo             | Autenticação                |
-| Responsável        | Paulo Fernando Puppe Junior |
-| Tipo de Documento  | Plano de Testes             |
-| Versão             | 1.1                         |
-| Ambiente           | UAT                         |
-| Status             | Em andamento                |
-| Data de Criação    | 2026-07-02                  |
-| Última Atualização | 2026-07-13                  |
+| Documento | PT-001 |
+| ---------- | ------ |
+| Projeto | SIM Racing Manager |
+| Módulo | Autenticação |
+| Responsável | Paulo Fernando Puppe Junior |
+| Tipo de Documento | Plano de Testes |
+| Versão | 1.1 |
+| Ambiente | UAT |
+| Status | Em andamento |
+| Data de Criação | 2026-07-02 |
+| Última Atualização | 2026-07-13 |
 
 ---
 
@@ -66,59 +66,61 @@ Garantir que:
 
 ### Documentação
 
-- Levantamento Funcional: ../Documentacao/Levantamento-Funcional.md
-- Critérios de Entrada e Saída: ../Documentacao/Criterios-de-Entrada-e-Saida.md
-- Mapa do Sistema: ../Documentacao/Mapa-do-Sistema.md
-
-### Planejamento
-
-- Backlog do Projeto: ../Planejamento/Backlog-do-Projeto.md
-- Estratégia de Testes: ../Planejamento/Estrategia-de-Testes.md
-- Cronograma: ../Planejamento/Cronograma.md
+- LF-001 — Levantamento Funcional
+- Backlog do Projeto
+- Estratégia de Testes
+- Critérios de Entrada e Saída
 
 ### Casos de Teste
 
-- Login: ../Casos-de-Teste/Login-Casos-de-Teste.md
+- CT-001 ao CT-010
 
-### Execuções / Evidências
+### Execuções
 
-- Execução: ../Execucao-de-Testes/ET-002-Login-Google-Valido.md
-- Evidências: ../Evidencias/ET-002-Login-Google-Valido/
+- ET-002
+
+### Evidências
+
+- EV-002
 
 ### Matrizes
 
-- Matriz de Rastreabilidade: ../Matrizes/Matriz-de-Rastreabilidade.md
-- Matriz de Riscos: ../Matrizes/Matriz-de-Riscos.md
+- Matriz de Rastreabilidade
+- Matriz de Riscos
 
 ---
 
 ## Ambiente de Testes
 
-| Item                 | Valor                |
-| -------------------- | -------------------- |
-| Ambiente             | UAT                  |
-| Sistema Operacional  | Windows 11           |
-| Navegador Principal  | Google Chrome        |
-| Navegador Secundário | Microsoft Edge       |
-| Internet             | Banda Larga          |
-| Banco de Dados       | Ambiente UAT         |
-| Autenticação         | Local + Google OAuth |
+| Item | Valor |
+| ---- | ----- |
+| Ambiente | UAT |
+| Sistema Operacional | Windows 10 |
+| Navegador Principal | Google Chrome |
+| Navegador Secundário | Microsoft Edge |
+| Internet | Banda Larga |
+| Banco de Dados | Ambiente UAT |
+| Autenticação | Local + Google OAuth |
 
 ---
 
 ## Ferramentas Utilizadas
 
-| Ferramenta               | Finalidade          |
-| ------------------------ | ------------------- |
-| VS Code                  | Documentação        |
-| Git                      | Versionamento       |
-| GitHub                   | Repositório         |
-| Markdown                 | Documentação        |
-| Markdownlint             | Padronização        |
-| Draw.io                  | Diagramas           |
-| Trello                   | Planejamento        |
-| Postman                  | API                 |
-| Playwright               | Automação (planejado)|
+| Ferramenta | Finalidade |
+| ---------- | ---------- |
+| VS Code | Documentação |
+| Git | Versionamento |
+| GitHub | Repositório |
+| Markdown | Documentação |
+| Markdownlint | Padronização |
+| Markdown Table Formatter | Formatação |
+| Markdown All in One | Produtividade |
+| Git Graph | Histórico Git |
+| Draw.io | Diagramas |
+| Trello | Planejamento |
+| Jira | Simulação de gestão |
+| Postman | API |
+| Playwright | Automação (futuro) |
 
 ---
 
@@ -140,10 +142,10 @@ Serão executados:
 A execução somente poderá iniciar quando:
 
 - Ambiente disponível.
-- Sistema implantado na versão a ser validada.
-- Casos de teste revisados e aprovados.
+- Sistema implantado.
+- Casos de teste aprovados.
 - Massa de testes preparada.
-- Requisitos e critérios de aceite definidos.
+- Requisitos definidos.
 
 ---
 
@@ -152,51 +154,50 @@ A execução somente poderá iniciar quando:
 Os testes serão considerados concluídos quando:
 
 - Todos os casos críticos forem executados.
-- Evidências das execuções estiverem anexadas.
-- Bugs relevantes forem registrados com evidências.
+- Evidências anexadas.
+- Bugs registrados.
 - Rastreabilidade atualizada.
-- Não existirem bugs bloqueantes abertos.
+- Não existirem bugs bloqueantes.
 
 ---
 
 ## Massa de Testes
 
-| Identificador | Descrição           |
-| ------------- | ------------------- |
-| MT-001        | Conta Google válida |
-| MT-002        | Usuário válido      |
-| MT-003        | Usuário inválido    |
-| MT-004        | Senha inválida      |
-| MT-005        | Payloads de segurança (ex: SQLi) |
+| Identificador | Descrição |
+| ------------- | --------- |
+| MT-001 | Conta Google válida |
+| MT-002 | Usuário válido |
+| MT-003 | Usuário inválido |
+| MT-004 | Senha inválida |
+| MT-005 | SQL Injection |
 
 ---
 
 ## Casos de Teste Cobertos
 
-| Caso   | Descrição               |
-| ------ | ----------------------- |
-| CT-001 | Login válido            |
-| CT-002 | Senha incorreta         |
-| CT-003 | Usuário inexistente     |
-| CT-004 | Campos vazios           |
-| CT-005 | SQL Injection           |
-| CT-006 | Senha em branco         |
-| CT-007 | Usuário em branco       |
+| Caso | Descrição |
+| ---- | --------- |
+| CT-001 | Login válido |
+| CT-002 | Senha incorreta |
+| CT-003 | Usuário inexistente |
+| CT-004 | Campos vazios |
+| CT-005 | SQL Injection |
+| CT-006 | Senha em branco |
+| CT-007 | Usuário em branco |
 | CT-008 | Bloqueio por tentativas |
-| CT-009 | Recuperação de senha    |
-| CT-010 | Logout                  |
-| CT-011 | Login com Google        |
+| CT-009 | Recuperação de senha |
+| CT-010 | Logout |
 
 ---
 
 ## Riscos
 
-| ID     | Risco                 | Mitigação                 |
-| ------ | --------------------- | ------------------------- |
-| RK-001 | Ambiente indisponível | Validar disponibilidade antes da execução |
-| RK-002 | Massa incorreta       | Revisar e versionar dados de teste |
-| RK-003 | Bugs críticos         | Definir plano de rollback e comunicação |
-| RK-004 | Evidências ausentes   | Checklist obrigatório para cada execução |
+| ID | Risco | Mitigação |
+| -- | ------ | --------- |
+| RK-001 | Ambiente indisponível | Validar antes da execução |
+| RK-002 | Massa incorreta | Revisar dados |
+| RK-003 | Bugs críticos | Regressão completa |
+| RK-004 | Evidências ausentes | Checklist obrigatório |
 
 ---
 
@@ -204,24 +205,26 @@ Os testes serão considerados concluídos quando:
 
 Será considerado aprovado quando:
 
-- Todos os testes críticos aprovados.
-- Sem bugs críticos ou bloqueantes abertos.
-- Evidências registradas e anexadas.
+- 100% dos testes críticos aprovados.
+- Sem bugs críticos.
+- Sem bugs bloqueantes.
+- Evidências registradas.
 - Documentação atualizada.
 
 ---
 
 ## Rastreabilidade
 
-| Artefato                  | Referência        |
-| ------------------------- | ----------------- |
-| Levantamento Funcional    | ../Documentacao/Levantamento-Funcional.md |
-| Backlog                   | ../Planejamento/Backlog-do-Projeto.md |
-| Casos de Teste            | ../Casos-de-Teste/Login-Casos-de-Teste.md |
-| Execução                  | ../Execucao-de-Testes/ET-002-Login-Google-Valido.md |
-| Evidências                | ../Evidencias/ET-002-Login-Google-Valido/ |
-| Bugs                      | ../Relatorios-de-Bugs/BUG-001-Login.md |
-| Matrizes                  | ../Matrizes/ |
+| Artefato | Referência |
+| --------- | ---------- |
+| Levantamento Funcional | LF-001 |
+| Backlog | QA-001 até QA-030 |
+| Casos de Teste | CT-001 ao CT-010 |
+| Execução | ET-002 |
+| Evidências | EV-002 |
+| Bugs | BUG-001 |
+| Matriz de Rastreabilidade | Atualizada |
+| Matriz de Riscos | Atualizada |
 
 ---
 
@@ -242,17 +245,18 @@ Será considerado aprovado quando:
 
 ## Próximos Passos
 
-- Executar CT-001 ao CT-011 prioritariamente.
-- Atualizar execuções (ET-002 e demais) com evidências.
-- Registrar bugs com evidências e atribuir responsáveis.
-- Definir métricas (taxa de passagem, defeitos por execução).
-- Planejar automação dos fluxos críticos (Playwright).
+- Executar CT-001 ao CT-010.
+- Atualizar ET-002.
+- Registrar evidências.
+- Abrir bugs quando necessário.
+- Atualizar métricas.
+- Preparar automação com Playwright.
 
 ---
 
 ## Histórico de Alterações
 
-| Versão | Data       | Autor                       | Alteração                                                                                                                |
-| ------ | ---------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1.0    | 2026-07-02 | Paulo Fernando Puppe Junior | Criação do documento                                                                                                     |
-| 1.1    | 2026-07-13 | Paulo Fernando Puppe Junior | Refatoração, padronização e links relativos corrigidos                                                                   |
+| Versão | Data | Autor | Alteração |
+| ------- | ---- | ----- | --------- |
+| 1.0 | 2026-07-02 | Paulo Fernando Puppe Junior | Criação do documento |
+| 1.1 | 2026-07-13 | Paulo Fernando Puppe Junior | Refatoração completa, padronização corporativa, inclusão de rastreabilidade, critérios, checklist e estratégia de testes |
