@@ -4,6 +4,7 @@
 
 | Campo | Valor |
 |-------|-------|
+
 | Projeto | SIM Racing Manager |
 | Módulo | Autenticação / Login |
 | Responsável | Paulo Fernando Puppe Junior |
@@ -37,6 +38,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ## Casos de Teste
 
 ### CT-001 — Login com usuário e senha válidos
+
 - Tipo: Funcional | Prioridade: Alta
 - Pré-condições: Usuário cadastrado; sistema disponível.
 - Massa: usuário: `usuario.teste` / senha: `Senha@123`
@@ -51,6 +53,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-002 — Login com senha incorreta
+
 - Tipo: Negativo | Prioridade: Alta
 - Pré-condições: Usuário cadastrado.
 - Massa: usuário: `usuario.teste` / senha: `senhaErrada123`
@@ -66,6 +69,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-003 — Login com usuário inexistente
+
 - Tipo: Negativo | Prioridade: Alta
 - Pré-condições: Nenhuma.
 - Massa: usuário: `usuario.inexistente` / senha: `Senha@123`
@@ -80,6 +84,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-004 — Login com campos vazios
+
 - Tipo: Validação | Prioridade: Alta
 - Pré-condições: Tela de Login aberta.
 - Passos: deixar usuário e/ou senha vazios e tentar Entrar.
@@ -90,6 +95,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-005 — Proteção contra SQL Injection
+
 - Tipo: Segurança | Prioridade: Alta
 - Massa: `' OR '1'='1`
 - Passos:
@@ -103,6 +109,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-006 — Login com senha em branco
+
 - Tipo: Validação | Prioridade: Média
 - Pré-condições: Usuário cadastrado.
 - Passos: informar usuário e deixar senha em branco.
@@ -113,6 +120,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-007 — Login com usuário em branco
+
 - Tipo: Validação | Prioridade: Média
 - Pré-condições: Tela de Login aberta.
 - Passos: deixar usuário em branco e informar senha válida.
@@ -123,6 +131,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-008 — Bloqueio após múltiplas tentativas inválidas
+
 - Tipo: Segurança | Prioridade: Alta
 - Pré-condições: Usuário cadastrado.
 - Passos: Errar a senha 5 vezes consecutivas; tentar login novamente.
@@ -133,6 +142,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-009 — Recuperação de senha
+
 - Tipo: Funcional | Prioridade: Alta
 - Pré-condições: Usuário cadastrado.
 - Passos:
@@ -146,6 +156,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-010 — Logout
+
 - Tipo: Funcional | Prioridade: Alta
 - Pré-condições: Usuário autenticado.
 - Passos: clicar em Logout.
@@ -156,6 +167,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ### CT-011 — Login com Google (conta válida)
+
 - Tipo: Funcional | Prioridade: Alta
 - Pré-condições: Conta Google válida disponível (ver Massa MT-001).
 - Passos:
@@ -173,6 +185,7 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ## Observações e próximos passos
+
 - Atualizar status dos casos pendentes após execução e anexar evidências nas execuções.
 - Criar um checklist de regressão mínima para cada release contendo CTs: CT-001, CT-002, CT-008, CT-011, CT-010.
 - Incluir automação dos fluxos críticos (login com Google e login local) e integrar com CI.
@@ -180,4 +193,5 @@ Consolidar e executar os casos de teste relacionados ao processo de autenticaç�
 ---
 
 ## Histórico de alterações
+
 - 2026-07-13 — Refatorado e completado por Paulo Fernando Puppe Junior
