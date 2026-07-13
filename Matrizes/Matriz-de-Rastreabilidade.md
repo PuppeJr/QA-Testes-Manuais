@@ -2,16 +2,41 @@
 
 ## Objetivo
 
-Relacionar cada funcionalidade do sistema aos respectivos casos de teste, execuções, evidências e relatórios de bugs.
+Esta matriz estabelece a rastreabilidade entre funcionalidades do sistema, casos de teste, execuções, evidências e relatórios de bugs.
+
+Seu objetivo é garantir que cada funcionalidade validada possa ser acompanhada durante todo o processo de teste.
 
 ---
 
-| Funcionalidade | Caso de Teste | Execução | Evidência | Bug | Status |
-| -------------- | ------------- | -------- | --------- | --- | ------ |
-| Login com Google | CT-SRM-001 | ET-002 | ET-002.md | — | ✅ Executado |
+## Legenda
+
+| Sigla | Descrição |
+|-------|-----------|
+
+| CT | Caso de Teste |
+| ET | Execução de Teste |
+| EV | Evidência |
+| BUG | Relatório de Bug |
+
+---
+
+## Matriz
+
+| Funcionalidade | Caso de Teste | Execução | Evidência | Bug |
+|----------------|---------------|----------|-----------|-----|
+
+| Login com Google | CT-002 | ET-002 | ET-002.md | BUG-001 |
+| Dashboard | — | — | — | — |
+| Drivers | — | — | — | — |
+| Teams | — | — | — | — |
+| Seasons | — | — | — | — |
+| Calendar | — | — | — | — |
+| Results | — | — | — | — |
+| Notifications | — | — | — | — |
+| Perfil do Usuário | — | — | — | — |
 
 ---
 
 ## Atualização
 
-Esta matriz será expandida conforme novos módulos forem sendo testados.
+Esta matriz será atualizada conforme novas funcionalidades forem testadas e novos artefatos forem adicionados ao projeto.
