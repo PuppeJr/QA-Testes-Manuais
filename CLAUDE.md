@@ -2,7 +2,7 @@
 
 ## 🎯 Escopo e Maturidade
 
-- **Aplicação:** Sim Racing Manager (Ambiente UAT) - https://simracingmanager.online
+- **Aplicação:** [Sim Racing Manager (Ambiente UAT)](https://simracingmanager.online)
 - **Metodologia:** Esteira de QA Manual Corporativa com Rastreabilidade Ponta a Ponta.
 - **Padrões:** Conventional Commits, markdownlint configurado e ID Link Tracker ativo.
 
