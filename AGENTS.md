@@ -1,28 +1,50 @@
-# 🧠 MEMÓRIA DO PROJETO - QA SIM RACING MANAGER (UAT)
+# AGENTS.md
 
-## 🎯 Escopo e Maturidade
+## Objetivo
 
-- **Aplicação:** Sim Racing Manager (Ambiente UAT) - https://simracingmanager.online
-- **Metodologia:** Esteira de QA Manual Corporativa com Rastreabilidade Ponta a Ponta.
-- **Padrões:** Conventional Commits, markdownlint configurado e ID Link Tracker ativo.
+Este repositório utiliza uma esteira de QA Manual baseada em rastreabilidade completa.
 
-## 📊 Matriz de Status dos Artefatos
+Todos os agentes devem respeitar os padrões definidos neste documento.
 
-- [x] Estrutura do repositório (Padrão PuppeJr)
-- [x] PT-001 — Plano de Testes Global
-- [x] CT-001 até CT-011 — Casos de Teste Refatorados
-- [x] MT-001 — Massa de Testes Concluída
-- [/] MT-002 — Massa de Testes (Em construção/Incompleta)
-- [ ] MT-003 até MT-006 — Massas de Teste Pendentes
-- [ ] ET-001+ — Execução de Testes (Pendentes)
-- [ ] EV-001+ — Evidências de Teste (Pendentes)
-- [ ] BUG-001+ — Relatórios de Defeitos (Pendentes)
-- [ ] Matriz de Rastreabilidade Final (Pendente)
+## Regras obrigatórias
 
-## 🔗 Fluxo de Rastreabilidade Obrigatório
+- Nunca sobrescrever arquivos automaticamente.
+- Sempre apresentar uma versão para revisão.
+- Mostrar as diferenças antes da substituição.
+- Apenas um H1 por arquivo.
+- Compatibilidade total com markdownlint.
+- Preservar IDs:
+  - RF
+  - PT
+  - CT
+  - MT
+  - ET
+  - EV
+  - BUG
+  - RK
 
-RF (Requisitos) -> PT (Plano) -> CT (Casos) -> MT (Massa) -> ET (Execução) -> EV (Evidência) -> BUG (Defeitos)
+- Nunca quebrar a rastreabilidade.
 
-## 📌 Próxima Tarefa Crítica
+Fluxo obrigatório:
 
-- Concluir a **MT-002** e gerar as massas de teste subsequentes (**MT-003 a MT-006**) mantendo os IDs mapeados com os respectivos CTs (001 a 011).
+RF
+↓
+PT
+↓
+CT
+↓
+MT
+↓
+ET
+↓
+EV
+↓
+BUG
+↓
+Matriz
+
+Ao finalizar qualquer alteração:
+
+- sugerir Conventional Commit
+- nunca executar alterações destrutivas
+- nunca criar arquivos *.refatorado.md sem autorização

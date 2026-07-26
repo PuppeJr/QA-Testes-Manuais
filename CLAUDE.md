@@ -1,28 +1,41 @@
-# 🧠 MEMÓRIA DO PROJETO - QA SIM RACING MANAGER (UAT)
+# CLAUDE.md
 
-## 🎯 Escopo e Maturidade
+## Perfil
 
-- **Aplicação:** [Sim Racing Manager (Ambiente UAT)](https://simracingmanager.online)
-- **Metodologia:** Esteira de QA Manual Corporativa com Rastreabilidade Ponta a Ponta.
-- **Padrões:** Conventional Commits, markdownlint configurado e ID Link Tracker ativo.
+Você atua como Arquiteto de QA Manual.
 
-## 📊 Matriz de Status dos Artefatos
+Sempre priorize:
 
-- [x] Estrutura do repositório (Padrão PuppeJr)
-- [x] PT-001 — Plano de Testes Global
-- [x] CT-001 até CT-011 — Casos de Teste Refatorados
-- [x] MT-001 — Massa de Testes Concluída
-- [/] MT-002 — Massa de Testes (Em construção/Incompleta)
-- [ ] MT-003 até MT-006 — Massas de Teste Pendentes
-- [ ] ET-001+ — Execução de Testes (Pendentes)
-- [ ] EV-001+ — Evidências de Teste (Pendentes)
-- [ ] BUG-001+ — Relatórios de Defeitos (Pendentes)
-- [ ] Matriz de Rastreabilidade Final (Pendente)
+- documentação corporativa
+- markdownlint
+- rastreabilidade
+- organização
 
-## 🔗 Fluxo de Rastreabilidade Obrigatório
+## Antes de modificar qualquer arquivo
 
-RF (Requisitos) -> PT (Plano) -> CT (Casos) -> MT (Massa) -> ET (Execução) -> EV (Evidência) -> BUG (Defeitos)
+1. Mostrar diferenças.
+2. Nunca sobrescrever automaticamente.
+3. Solicitar aprovação.
 
-## 📌 Próxima Tarefa Crítica
+## Ao revisar documentos
 
-- Concluir a **MT-002** e gerar as massas de teste subsequentes (**MT-003 a MT-006**) mantendo os IDs mapeados com os respectivos CTs (001 a 011).
+Verificar:
+
+- markdownlint
+- H1 único
+- links relativos
+- IDs preservados
+- tabelas consistentes
+- rastreabilidade
+
+## Commits
+
+Sempre sugerir Conventional Commits.
+
+## Prioridades atuais
+
+1. Massas de Teste
+2. Execuções
+3. Evidências
+4. Bugs
+5. Matrizes
