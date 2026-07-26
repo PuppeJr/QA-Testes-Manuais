@@ -1,21 +1,37 @@
 # QA-Testes-Manuais
 
-Repositório destinado ao desenvolvimento de um portfólio profissional de **Quality Assurance (QA)**, contendo documentação completa para testes manuais baseada em boas práticas de Engenharia de Software.
+> Portfólio profissional de **Quality Assurance (QA)** contendo documentação completa de testes manuais, organizada conforme boas práticas de Engenharia de Software.
 
-O objetivo deste projeto é demonstrar conhecimento em planejamento, execução, rastreabilidade e documentação de testes utilizando um fluxo semelhante ao adotado em equipes de QA.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue)
+![QA](https://img.shields.io/badge/QA-Manual-success)
+![Markdown](https://img.shields.io/badge/Documentation-Markdown-informational)
+![Git](https://img.shields.io/badge/Git-Versionado-orange)
+
+---
+
+## Sobre o Projeto
+
+Este repositório tem como objetivo demonstrar competências em **Quality Assurance**, utilizando um fluxo completo de documentação de testes semelhante ao encontrado em projetos corporativos.
+
+Todo o material foi desenvolvido para fins de estudo, prática e composição de portfólio profissional.
 
 ---
 
 ## Objetivos
 
-- Elaborar documentação de testes manuais.
-- Demonstrar organização e rastreabilidade entre artefatos.
-- Aplicar boas práticas de documentação técnica.
-- Construir um portfólio profissional para atuação em Quality Assurance.
+- Planejamento de testes
+- Documentação técnica
+- Casos de teste
+- Execução de testes
+- Evidências
+- Relatórios de bugs
+- Rastreabilidade
+- Organização de projeto
+- Versionamento utilizando Git
 
 ---
 
-## Fluxo do Processo de Testes
+## Fluxo de QA
 
 ```text
 Requisito (RF)
@@ -42,26 +58,39 @@ Matriz de Rastreabilidade
 ```text
 QA-Testes-Manuais
 │
-├── Automacao
 ├── Casos-de-Teste
-├── Documentacao
-├── Evidencias
-├── Execucao-de-Testes
-├── Ferramentas
-├── Massa-de-Testes
-├── Matrizes
-├── Metricas
-├── Planejamento
 ├── Plano-de-Testes
+├── Massa-de-Testes
+├── Execucao-de-Testes
+├── Evidencias
 ├── Relatorios-de-Bugs
-├── Sprints
+├── Matrizes
+├── Planejamento
+├── Documentacao
+├── Templates
+├── Ferramentas
+├── Automacao
 ├── SQL
-└── Templates
+├── Sprints
+└── Metricas
 ```
 
 ---
 
-## Tecnologias e Ferramentas
+## Organização da Documentação
+
+| Categoria    | Conteúdo                                                  |
+| ------------ | --------------------------------------------------------- |
+| Planejamento | Estratégia, Cronograma, Releases, Backlog                 |
+| Documentação | Levantamento Funcional, Glossário, Governança, Inventário |
+| Testes       | Plano de Testes, Casos de Teste, Massa de Testes          |
+| Execução     | Execuções, Evidências, Bugs                               |
+| Gestão       | Matrizes, Métricas, Sprints                               |
+| Apoio        | Templates e Ferramentas                                   |
+
+---
+
+## Tecnologias Utilizadas
 
 - Git
 - GitHub
@@ -70,39 +99,121 @@ QA-Testes-Manuais
 - Markdownlint
 - Draw.io
 - SQL
-- Playwright (planejado)
+- Google Workspace
+- GitHub Projects
+
+### Planejado
+
+- Playwright
+- GitHub Actions
+- CI/CD
 
 ---
 
-## Documentação Disponível
+## Documentos Disponíveis
+
+### Planejamento
+
+- Estratégia de Testes
+- Cronograma
+- Backlog
+- Releases
+
+### Documentação
+
+- Levantamento Funcional
+- Inventário do Sistema
+- Glossário
+- Governança
+- Roadmap
+
+### Testes
 
 - Planos de Teste
 - Casos de Teste
 - Massas de Teste
-- Execuções de Teste
+- Execuções
 - Evidências
 - Relatórios de Bugs
-- Matrizes de Rastreabilidade
-- Documentação do Projeto
+
+### Gestão
+
+- Matrizes
+- Métricas
+- Sprints
 
 ---
 
-## Status
+## Boas Práticas Aplicadas
 
-Projeto em evolução contínua, com documentação sendo refinada para representar um fluxo completo de testes manuais e servir como portfólio profissional.
+- Rastreabilidade entre documentos
+- Versionamento com Git
+- Padronização Markdown
+- Compatibilidade com markdownlint
+- Organização por artefatos
+- Templates reutilizáveis
+- Identificação por IDs
+
+---
+
+## Convenção de Identificadores
+
+| Prefixo | Significado         |
+| ------- | ------------------- |
+| RF      | Requisito Funcional |
+| PT      | Plano de Testes     |
+| CT      | Caso de Teste       |
+| MT      | Massa de Testes     |
+| ET      | Execução de Testes  |
+| EV      | Evidência           |
+| BUG     | Relatório de Bug    |
+| RK      | Risco               |
+
+---
+
+## Status do Projeto
+
+| Item            | Status |
+| --------------- | ------ |
+| Planejamento    | ✅     |
+| Documentação    | ✅     |
+| Casos de Teste  | ✅     |
+| Massa de Testes | ✅     |
+| Execução        | ✅     |
+| Evidências      | ✅     |
+| Bugs            | ✅     |
+| Matrizes        | ✅     |
+| Automação       | 🚧     |
+| Métricas        | 🚧     |
+
+---
+
+## Roadmap
+
+- [x] Planejamento
+- [x] Documentação
+- [x] Casos de Teste
+- [x] Massa de Testes
+- [x] Execuções
+- [x] Evidências
+- [x] Bugs
+- [x] Matrizes
+- [ ] Automação com Playwright
+- [ ] Integração com GitHub Actions
+- [ ] Dashboard de Métricas
 
 ---
 
 ## Autor
 
-** Paulo Fernando Puppe Junior
+\*_Paulo Fernando Puppe Junior_
 
 Estudante de Análise e Desenvolvimento de Sistemas.
 
-Portfólio voltado para documentação de testes, QA Manual e automação de testes.
+Portfólio voltado para Engenharia de Qualidade (QA), documentação técnica e automação de testes.
 
 ---
 
 ## Licença
 
-Este projeto possui finalidade exclusivamente educacional e para composição de portfólio profissional.
+Projeto desenvolvido exclusivamente para fins educacionais e composição de portfólio profissional.
